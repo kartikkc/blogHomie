@@ -4,9 +4,6 @@ const ejs = require("ejs");
 const lodash = require("lodash");
 const app = express();
 
-const homeContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aut magnam consequuntur. Numquam labore accusamus soluta expedita tempora non nisi in, hic nam dolore culpa quas autem enim! Beatae, ipsa.";
-const aboutContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aut magnam consequuntur. Numquam labore accusamus soluta expedita tempora non nisi in, hic nam dolore culpa quas autem enim! Beatae, ipsa.";
-const contactContent = "If you like my Blogs, Feel free to drop a message.";
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + "/public"));
 app.set("view engine", "ejs");
@@ -25,15 +22,15 @@ let posts = [{
 }];
 let messages =[];
 app.get("/", (req, res) => {
-    res.render("home", { content: homeContent, dateAndDay: day, postContent: posts });
+    res.render("home", { dateAndDay: day, postContent: posts });
 })
 
 app.get("/about", (req, res) => {
-    res.render("about", { about: aboutContent, dateAndDay: day });
+    res.render("about", { dateAndDay: day });
 })
 
 app.get("/contact", (req, res) => {
-    res.render("contact", { contact: contactContent });
+    res.render("contact");
 })
 
 app.get("/compose", (req, res) => {

@@ -9,8 +9,8 @@ const aboutContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. V
 const contactContent = "If you like my Blogs, Feel free to drop a message.";
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
-app.use(express.static(__dirname + "/public"));
-app.set("views", __dirname + "/views");
+app.use(express.static(__dirname + "public"));
+app.set("views", __dirname + "views");
 let date = new Date();
 const options = {
     weekday: 'long',

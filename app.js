@@ -22,15 +22,15 @@ let posts = [{
 }];
 let messages =[];
 app.get("/", (req, res) => {
-    res.render("home", { content: homeContent, dateAndDay: day, postContent: posts });
+    res.render("home", { dateAndDay: day, postContent: posts });
 })
 
 app.get("/about", (req, res) => {
-    res.render("about", { about: aboutContent, dateAndDay: day });
+    res.render("about", { dateAndDay: day });
 })
 
 app.get("/contact", (req, res) => {
-    res.render("contact", { contact: contactContent });
+    res.render("contact");
 })
 
 app.get("/compose", (req, res) => {

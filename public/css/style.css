@@ -72,6 +72,7 @@ ul {
 }
 
 footer {
+    width: 100%;
     background-color: #424242;
 }
 
@@ -99,7 +100,12 @@ footer .footer-heading {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 100;
 }
-
+.logo{
+    position: relative;
+    float: right;
+    width: 4rem;
+    opacity: 0.5;
+}
 /* footer ends */
 
 /* Landing Section */

@@ -5,9 +5,11 @@ const lodash = require("lodash");
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static(__dirname + "/public"));
+app.use(express.static("public"));
+// app.use(express.static(__dirname + "/public"));
 app.set("view engine", "ejs");
-app.set("views", __dirname + "/views");
+app.set("views", "views");
+// app.set("views", __dirname + "/views");
 let date = new Date();
 const options = {
     weekday: 'long',

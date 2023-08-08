@@ -1,7 +1,7 @@
 /* Navbar */
 #Navbar {
     margin: 0.5% 7%;
-    font-family: 'Pacifico', monospace;
+    font-family: 'Bree Serif', monospace;
     font-size: 2vh;
 }
 
@@ -108,7 +108,8 @@ footer .footer-heading {
 }
 
 .featured {
-    font-family: 'Pacifico', monospace;
+    /* font-family: 'Pacifico', monospace; */
+    font-family: 'Bree Serif';
     font-weight: 400;
 }
 
@@ -141,7 +142,7 @@ footer .footer-heading {
 
 .blog-title {
     width: 100%;
-    font-family: 'Pacifico', monospace;
+    font-family: 'Bree Serif', monospace;
     background: none;
     background-color: rgba(0, 0, 0, 0.3);
     padding: 5% 3%;
@@ -164,8 +165,8 @@ footer .footer-heading {
 
 /* about page */
 .featured-container-about {
-    height: 40rem;
-    width: 40%;
+    height: 40rem !important;
+    width: 40% !important;
     border-radius: 50px;
     overflow: hidden;
     position: relative;
@@ -173,19 +174,178 @@ footer .footer-heading {
 }
 
 .about-p {
-    width: 57%;
+    width: 100% !important;
     overflow: hidden !important;
     display: inline-block;
     position: relative;
-    bottom: 4.5rem;
+    bottom: -5.5rem;
     left: 1.8rem;
     word-break: keep-all;
 }
+
 .main-img-about {
     position: relative;
     height: 70rem;
-    top: -200px;
+    top: -244px;
     border-radius: 50px;
+    left: -246px;
+    bottom: 251px;
+    right: 246px;
+}
+
+.blog-title-about {
+    width: 100%;
+    font-family: 'Pacifico', monospace;
+    background: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 5% 3%;
+    position: absolute;
+    bottom: 0px;
+    font-weight: 400;
+    z-index: 1;
+    color: white;
+    opacity: 1;
+    right: 0px;
 }
 
 /* about page ends */
+
+/* media query */
+
+@media (max-width: 1919px) {
+    .main-img {
+        position: relative;
+        height: 51rem;
+        top: -142px;
+        border-radius: 50px;
+        left: -175px;
+        right: 0;
+    }
+
+    .main-img-about {
+        position: relative;
+        height: 57rem !important;
+        top: -142px !important;
+        border-radius: 50px;
+        left: -124px;
+        right: 0;
+    }
+
+    .navbar-brand-footer {
+        margin-right: 3rem !important;
+    }
+
+    .featured-container-about {
+        height: 40rem !important;
+        width: 100% !important;
+        border-radius: 50px;
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+    }
+
+    .about-p {
+        justify-content: space-between;
+        width: 96% !important;
+        overflow: hidden !important;
+        display: inline-block;
+        position: relative;
+        bottom: -2.5rem;
+        left: 0.8rem;
+        word-break: keep-all;
+    }
+}
+
+@media (max-width:571px) {
+    .main-img {
+        position: relative;
+        height: 51rem;
+        top: -142px;
+        border-radius: 50px;
+        left: -175px;
+        right: 0;
+    }
+
+    .main-img-about {
+        position: relative;
+        height: 51rem !important;
+        top: -142px !important;
+        border-radius: 50px;
+        left: -175px;
+        right: 0;
+    }
+
+    .navbar-brand-footer {
+        margin-right: 3rem !important;
+    }
+
+    .featured-container-about {
+        height: 40rem !important;
+        width: 100% !important;
+        border-radius: 50px;
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+    }
+
+    .about-p {
+        width: 90% !important;
+        overflow: hidden !important;
+        display: inline-block;
+        position: relative;
+        bottom: -2.5rem;
+        left: 0.8rem;
+        word-break: keep-all;
+    }
+
+    .main-img-about {
+        /* position: relative; */
+        height: 70rem;
+        top: -200px;
+        border-radius: 50px;
+    }
+}
+
+@media (max-width:375px) {
+    .main-img {
+        position: relative;
+        height: 50rem;
+        top: -142px;
+        border-radius: 50px;
+        left: -230px;
+        right: 0;
+    }
+
+    .main-img-about {
+        position: relative;
+        height: 51rem !important;
+        top: -142px !important;
+        border-radius: 50px;
+        left: -235px;
+        right: 0;
+    }
+
+    .navbar-brand-footer {
+        margin-right: 3rem !important;
+    }
+
+    .featured-container-about {
+        height: 40rem !important;
+        width: 100% !important;
+        border-radius: 50px;
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+    }
+
+    .about-p {
+        width: 84% !important;
+        overflow: hidden !important;
+        display: inline-block;
+        position: relative;
+        bottom: -2.5rem;
+        left: 0.8rem;
+        word-break: keep-all;
+    }
+
+}
